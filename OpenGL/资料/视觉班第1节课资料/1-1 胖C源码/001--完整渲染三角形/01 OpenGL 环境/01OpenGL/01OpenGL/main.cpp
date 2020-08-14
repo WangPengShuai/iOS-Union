@@ -50,7 +50,7 @@ void RenderScene(void)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT|GL_STENCIL_BUFFER_BIT);
     
     //2.设置一组浮点数来表示红色
-    GLfloat vRed[] = {1.0,1.00,0.0,0.5f};
+    GLfloat vRed[] = {1.0,0.0,0.0,1};
     
     //传递到存储着色器，即GLT_SHADER_IDENTITY着色器，这个着色器只是使用指定颜色以默认笛卡尔坐标第在屏幕上渲染几何图形
     shaderManager.UseStockShader(GLT_SHADER_IDENTITY,vRed);
@@ -61,7 +61,6 @@ void RenderScene(void)
     //在开始的设置openGL 窗口的时候，我们指定要一个双缓冲区的渲染环境。这就意味着将在后台缓冲区进行渲染，渲染结束后交换给前台。这种方式可以防止观察者看到可能伴随着动画帧与动画帧之间的闪烁的渲染过程。缓冲区交换平台将以平台特定的方式进行。
     //将后台缓冲区进行渲染，然后结束后交换给前台
     glutSwapBuffers();
-    
 }
 
 void setupRC()

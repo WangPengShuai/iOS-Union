@@ -127,9 +127,6 @@ void setupRC()
 }
 
 void SpecialKeys(int key, int x, int y){
-    
-   
-    
     GLfloat stepSize = 0.025f;
     
     if (key == GLUT_KEY_UP) {
@@ -168,7 +165,6 @@ void SpecialKeys(int key, int x, int y){
     }
     
     glutPostRedisplay();
-    
 }
 
 int main(int argc,char *argv[])
