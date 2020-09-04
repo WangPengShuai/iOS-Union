@@ -1,5 +1,5 @@
 //演示了OpenGL背面剔除，深度测试，和多边形模式
-#include "GLTools.h"	
+#include "GLTools.h"
 #include "GLMatrixStack.h"
 #include "GLFrame.h"
 #include "GLFrustum.h"
